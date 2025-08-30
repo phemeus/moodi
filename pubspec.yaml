@@ -1,0 +1,56 @@
+name: moodi
+description: Offline emoji mood tracker with Firebase Realtime DB + AdMob
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Firebase
+  firebase_core: ^3.4.0
+  firebase_auth: ^5.2.0
+  firebase_database: ^11.0.0
+  google_sign_in: ^6.2.1
+
+  # Ads
+  google_mobile_ads: ^5.1.0
+
+  # State / Utils
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+  fl_chart: ^0.68.0
+  encrypt: ^5.0.3
+  
+  # Security
+  flutter_secure_storage: ^9.2.2
+  local_auth: ^2.2.0
+
+  # AI
+  google_generative_ai: ^0.4.6
+  http: ^1.1.0
+  
+  # Notifications
+  flutter_local_notifications: ^18.0.0
+  timezone: ^0.9.4
+  flutter_launcher_icons: ^0.14.4
+  
+  # URL Launcher
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: assets/moodi.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/moodi.png

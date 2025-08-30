@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "868559074131",
+    "project_id": "moodi-35089",
+    "storage_bucket": "moodi-35089.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868559074131:android:70611b29dbedb7a5a267a6",
+        "android_client_info": {
+          "package_name": "com.prestivo.moodi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf9qJdgvS3hiXSRh_T6sndl2AweW8OFvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
