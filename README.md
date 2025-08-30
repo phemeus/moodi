@@ -39,6 +39,13 @@ Moodi, günlük ruh halinizi takip etmenizi ve mental sağlığınızı iyileşt
 - **Rastgele Söz**: Her gün yeni motivasyon
 - **Mood Bazlı Seçim**: Mevcut ruh halinize uygun sözler
 
+#### 4. 🔐 Enterprise Güvenlik
+- **AES-256 Şifreleme**: Endüstri standardı güvenlik
+- **Biometric Authentication**: Parmak izi, yüz tanıma desteği
+- **Brute Force Koruması**: Güvenlik saldırılarına karşı koruma
+- **Session Management**: Otomatik timeout ve güvenlik kontrolleri
+- **Google Play Store Uyumlu**: Enterprise seviye güvenlik standartları
+
 ## 🛠️ Teknik Detaylar
 
 ### Kullanılan Teknolojiler
@@ -46,19 +53,22 @@ Moodi, günlük ruh halinizi takip etmenizi ve mental sağlığınızı iyileşt
 - **Firebase**: Authentication ve veri yönetimi
 - **Provider**: State management
 - **Google AdMob**: Reklam entegrasyonu
+- **Flutter Secure Storage**: Güvenli veri saklama
+- **Local Authentication**: Biometric kimlik doğrulama
 
 ### Proje Yapısı
 ```
 lib/
 ├── core/           # Temel servisler ve modeller
+│   ├── models/     # Veri modelleri
+│   ├── utils/      # Yardımcı fonksiyonlar
+│   └── services/   # Firebase ve güvenlik servisleri
 ├── ui/            # Kullanıcı arayüzü
 │   ├── auth/      # Giriş sayfaları
 │   ├── breathing/ # Nefes egzersizi
-│   ├── habits/    # Alışkanlık çarkı
-│   ├── quotes/    # Motivasyonel sözler
 │   ├── home/      # Ana sayfa
 │   ├── stats/     # İstatistikler
-│   └── settings/  # Ayarlar
+│   └── settings/  # Ayarlar ve güvenlik
 └── main.dart      # Uygulama giriş noktası
 ```
 
@@ -78,17 +88,15 @@ lib/
 3. Animasyonlu daireyi takip ederek nefes alın ve verin
 4. 4 fazlı nefes döngüsünü tamamlayın
 
-### Alışkanlık Çarkı
-1. "Alışkanlık Çarkı" kartına tıklayın
-2. "Çarkı Çevir" butonuna basın
-3. Çark dönerken bekleyin
-4. Rastgele seçilen görevi tamamlayın
+### Günlük Görevler
+1. Ana sayfada günlük görevleri görün
+2. Görevleri tamamlayarak puan kazanın
+3. "Tamamlanmış Görevler" ile geçmiş aktivitelerinizi takip edin
 
-### Motivasyonel Sözler
-1. "Motivasyonel Sözler" kartına tıklayın
-2. Ruh halinizi seçin veya rastgele söz görün
-3. "Rastgele Söz" ile yeni sözler keşfedin
-4. "Aynı Mood" ile aynı kategoride farklı sözler görün
+### Güvenlik Ayarları
+1. Ayarlar sayfasında "Güvenlik Bilgileri"ne gidin
+2. Güvenlik testini çalıştırın
+3. Biometric authentication'ı aktif edin
 
 ## 🔧 Yapılandırma
 
@@ -100,11 +108,25 @@ lib/
 - `android/app/src/main/AndroidManifest.xml` dosyasında reklam ID'lerini güncelleyin
 - Test reklamları için test cihaz ID'lerini ekleyin
 
+### Güvenlik
+- Android manifest'te biometric izinlerini kontrol edin
+- Flutter Secure Storage için gerekli bağımlılıkları ekleyin
+
 ## 📊 Performans
 
 - **Nefes Egzersizi**: Smooth 60fps animasyonlar
-- **Alışkanlık Çarkı**: 3 saniye döndürme animasyonu
-- **Motivasyonel Sözler**: Anında yükleme ve filtreleme
+- **Günlük Görevler**: Firebase real-time sync
+- **Güvenlik**: AES-256 şifreleme ile hızlı işlem
+- **UI**: Material Design 3 ile modern arayüz
+
+## 🔒 Güvenlik Özellikleri
+
+- **AES-256 Encryption**: Endüstri standardı şifreleme
+- **Biometric Authentication**: Parmak izi, yüz tanıma
+- **Secure Storage**: Android Keystore ve iOS Keychain
+- **Brute Force Protection**: Güvenlik saldırılarına karşı koruma
+- **Session Management**: Otomatik timeout
+- **Data Integrity**: Checksum doğrulama
 
 ## 🤝 Katkıda Bulunma
 
